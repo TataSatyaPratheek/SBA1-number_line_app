@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:number_line_app/ui/screens/number_line_home.dart';
-import 'package:number_line_app/providers/game_state_provider.dart';
 import 'package:provider/provider.dart';
+import 'ui/screens/number_line_screen.dart';
+import 'providers/game_state_provider.dart';
 
 void main() {
-  runApp(NumberLineApp());
+  runApp(NumberLineGameApp());
 }
 
-class NumberLineApp extends StatelessWidget {
+class NumberLineGameApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => GameStateProvider(),
       child: MaterialApp(
-        title: 'Interactive Number Line',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: NumberLineHome(),
+        title: 'Number Line Game',
+        theme: ThemeData(primarySwatch: Colors.blue),
+        home: NumberLineScreen(),
       ),
     );
   }

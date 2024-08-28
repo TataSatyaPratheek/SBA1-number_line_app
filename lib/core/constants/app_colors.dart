@@ -1,4 +1,3 @@
-// app_colors.dart
 import 'package:flutter/material.dart';
 
 class AppColors {
@@ -6,4 +5,6 @@ class AppColors {
   static const Color background = Colors.white;
   static const Color correct = Colors.green;
   static const Color incorrect = Colors.red;
+  static const Color lineColor = Colors.black;
+  static const Color numberColor = Colors.black;
 }

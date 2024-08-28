@@ -1,4 +1,4 @@
-// number_line_painter.dart
+// number_line.dart
 import 'package:flutter/material.dart';
 import 'package:number_line_app/core/utils/custom_painter_utils.dart';
 
